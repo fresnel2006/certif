@@ -8,8 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>Ange Fresnel Traoré</h1>
-        <p>Développeur Web | Étudiant en Informatique</p>
+        <div class="hero">
+            <h1>Ange Fresnel Traoré</h1>
+            <p>Développeur Web | Étudiant en Informatique</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn-primary">Découvrir</a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">À propos</a></li>
@@ -20,27 +26,44 @@
     </header>
 
     <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis un étudiant passionné par le développement web, spécialisé en HTML, CSS et JavaScript. J'aime créer des sites interactifs et accessibles.</p>
-        <img src="https://via.placeholder.com/300x200" alt="Photo de profil d'Ange Fresnel Traoré">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>À propos de moi</h2>
+                <p>Je suis un étudiant passionné par le développement web, spécialisé en HTML, CSS et JavaScript. J'aime créer des sites interactifs et accessibles.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/300x300" alt="Photo de profil d'Ange Fresnel Traoré">
+            </div>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Mes Projets</h2>
-        <div class="project">
-            <h3>Calculatrice Simple</h3>
-            <p>Une calculatrice basique en HTML, CSS et JavaScript.</p>
-            <a href="calculatrice.html" target="_blank">Voir le projet</a>
-        </div>
-        <div class="project">
-            <h3>Liste de Courses</h3>
-            <p>Une application pour gérer une liste de courses.</p>
-            <a href="list course.html" target="_blank">Voir le projet</a>
-        </div>
-        <div class="project">
-            <h3>Formulaire Interactif</h3>
-            <p>Un formulaire avec validation et messages personnalisés.</p>
-            <a href="form.html" target="_blank">Voir le projet</a>
+        <div class="projects-grid">
+            <div class="project">
+                <div class="project-icon">🧮</div>
+                <h3>Calculatrice Simple</h3>
+                <p>Une calculatrice basique en HTML, CSS et JavaScript.</p>
+                <a href="calculatrice.html" target="_blank" class="project-link">Voir le projet</a>
+            </div>
+            <div class="project">
+                <div class="project-icon">🛒</div>
+                <h3>Liste de Courses</h3>
+                <p>Une application pour gérer une liste de courses.</p>
+                <a href="list course.html" target="_blank" class="project-link">Voir le projet</a>
+            </div>
+            <div class="project">
+                <div class="project-icon">📝</div>
+                <h3>Formulaire Interactif</h3>
+                <p>Un formulaire avec validation et messages personnalisés.</p>
+                <a href="form.html" target="_blank" class="project-link">Voir le projet</a>
+            </div>
         </div>
     </section>
 
