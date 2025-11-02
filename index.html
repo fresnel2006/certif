@@ -5,60 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ange Fresnel Traoré</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Ange Fresnel Traoré</h1>
-        <p>Développeur Web | Étudiant en Informatique</p>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis un étudiant passionné par le développement web, spécialisé en HTML, CSS et JavaScript. J'aime créer des sites interactifs et accessibles.</p>
-        <img src="https://via.placeholder.com/300x200" alt="Photo de profil d'Ange Fresnel Traoré">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ange Fresnel Traoré</h1>
+            <p>Développeur Web | Étudiant en Informatique | Passionné par la technologie</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn-primary">À propos de moi</a>
+                <a href="#projects" class="btn-secondary">Voir mes projets</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/400x400/667eea/ffffff?text=AF" alt="Photo de profil d'Ange Fresnel Traoré - Développeur Web">
+        </div>
     </section>
 
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Compétences</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>À propos de moi</h2>
+                <p>Je suis Ange Fresnel Traoré, étudiant en informatique passionné par le développement web. Spécialisé en HTML, CSS et JavaScript, j'aime créer des expériences utilisateur exceptionnelles et des sites web interactifs et accessibles.</p>
+                <p>Mon objectif est de combiner créativité et technologie pour développer des solutions innovantes qui répondent aux besoins des utilisateurs modernes.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/300x300/764ba2/ffffff?text=Ange+Fresnel" alt="Portrait professionnel d'Ange Fresnel Traoré">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fab fa-html5"></i> Frontend</h3>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Outils</h3>
+                <div class="skills">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Copilot</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                <div class="skills">
+                    <span class="skill-tag">Informatique</span>
+                    <span class="skill-tag">Développement Web</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Mes Projets</h2>
-        <div class="project">
-            <h3>Calculatrice Simple</h3>
-            <p>Une calculatrice basique en HTML, CSS et JavaScript.</p>
-            <a href="calculatrice.html" target="_blank">Voir le projet</a>
-        </div>
-        <div class="project">
-            <h3>Liste de Courses</h3>
-            <p>Une application pour gérer une liste de courses.</p>
-            <a href="list course.html" target="_blank">Voir le projet</a>
-        </div>
-        <div class="project">
-            <h3>Formulaire Interactif</h3>
-            <p>Un formulaire avec validation et messages personnalisés.</p>
-            <a href="form.html" target="_blank">Voir le projet</a>
+        <div class="projects-grid">
+            <div class="project">
+                <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                <h3>Calculatrice Interactive</h3>
+                <p>Une calculatrice moderne avec interface utilisateur intuitive, développée en HTML, CSS et JavaScript pur.</p>
+                <a href="calculatrice.html" class="project-link" target="_blank">Voir le projet <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project">
+                <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+                <h3>Liste de Courses</h3>
+                <p>Application web pour gérer efficacement une liste de courses avec fonctionnalités d'ajout et suppression dynamiques.</p>
+                <a href="list course.html" class="project-link" target="_blank">Voir le projet <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project">
+                <div class="project-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>Formulaire Interactif</h3>
+                <p>Formulaire avec validation en temps réel, messages personnalisés et expérience utilisateur améliorée.</p>
+                <a href="form.html" class="project-link" target="_blank">Voir le projet <i class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Nom:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
+        <h2>Contactez-moi</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Informations de contact</h3>
+                <p><i class="fas fa-envelope"></i> ange.fresnel@email.com</p>
+                <p><i class="fas fa-phone"></i> +225 XX XX XX XX</p>
+                <p><i class="fas fa-map-marker-alt"></i> Côte d'Ivoire</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required aria-describedby="name-error">
+                    <span id="name-error" class="error-message" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+                    <span id="email-error" class="error-message" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="error-message" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+            </form>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Ange Fresnel Traoré. Tous droits réservés.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Ange Fresnel Traoré. Tous droits réservés.</p>
+            <p>Développé avec <i class="fas fa-heart"></i> en HTML, CSS & JavaScript</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
